@@ -1,0 +1,16 @@
+#title-container {
+    height: 500px;
+    background: url(../images/home-background.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#menu-container {
+    background-color: beige;
+    text-align: center;
+    display: flex;
+    padding-left: 40%;
+    padding-right: 40%;
+    justify-content: space-between;
+}

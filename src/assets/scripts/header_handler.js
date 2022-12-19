@@ -13,15 +13,15 @@ function loadMenu() {
         <div class="header-menu" id="container">
             <table class="header-menu">
                 <tr class="header-menu">
-                    <td class="header-menu">About</td>
-                    <td class="header-menu">Projects</td>
-                    <td class="header-menu">Resume</td>
-                    <td class="header-menu">Contact</td>
+                    <td class="header-menu" id="about">About</td>
+                    <td class="header-menu" id="projects">Projects</td>
+                    <td class="header-menu" id="resume">Resume</td>
+                    <td class="header-menu" id="contact">Contact</td>
                 </tr>
             </table>
         </div>
         <div class="header-title" id="container">
-            <h2 class="header-title">Christopher Han</h2>
+            <h2 class="header-title" id="title">Christopher Han</h2>
         </div>
         <div class="header-icons" id="container">
             <table class="header-icons">
@@ -63,17 +63,26 @@ function loadMenu() {
 }
 
 function navigateMenu() {
-    const homeButton = document.getElementById('menu-home');
-    const projectsButton = document.getElementById('menu-projects');
-    const contactButton = document.getElementById('menu-contact');
+    const aboutButton = document.querySelector('#about.header-menu');
+    const projectsButton = document.querySelector('#projects.header-menu');
+    const resumeButton = document.querySelector('#resume.header-menu')
+    const contactButton = document.querySelector('#contact.header-menu');
+    const homeButton = document.querySelector('#title.header-title');
 
-    homeButton.addEventListener('click', function() {
-        location.href = 'index.html';
+    aboutButton.addEventListener('click', function() {
+        location.href = 'about.html';
     })
     projectsButton.addEventListener('click', function() {
         location.href = 'projects.html';
     });
+    resumeButton.addEventListener('click', function() {
+        location.href = 'resume.html'
+    });
     contactButton.addEventListener('click', function() {
         location.href = 'contact.html';
+    });
+
+    homeButton.addEventListener('click', function() {
+        location.href = 'index.html';
     });
 }

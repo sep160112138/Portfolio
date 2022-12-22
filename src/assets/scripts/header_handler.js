@@ -8,58 +8,120 @@ function init() {
 }
 
 function loadMenu() {
-    const headerContainer = document.getElementById('header');
-    headerContainer.innerHTML = `
-        <div class="header-menu" id="container">
-            <table class="header-menu">
-                <tr class="header-menu">
-                    <td class="header-menu" id="about">About</td>
-                    <td class="header-menu" id="projects">Projects</td>
-                    <td class="header-menu" id="resume">Resume</td>
-                    <td class="header-menu" id="contact">Contact</td>
-                </tr>
-            </table>
-        </div>
-        <div class="header-title" id="container">
-            <h2 class="header-title" id="title">Christopher Han</h2>
-        </div>
-        <div class="header-icons" id="container">
-            <table class="header-icons">
-                <tr class="header-icons">
-                    <td class="header-icons">
-                        <a href="https://www.linkedin.com/in/christopher-han-737a74235/">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                        </a>
-                    </td>
-                    <td class="header-icons">
-                        <a href="https://github.com/sep160112138">
-                            <i class="fa fa-github" aria-hidden="true"></i>
-                        </a>
-                    </td>
-                    <td class="header-icons">
-                        <a href="mailto:christopher.bo.han2001@gmail.com">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </a>
-                    </td>
-                </tr>
-            </table>
+
+    const header = document.getElementById('header');
+    
+    header.innerHTML = `
+        <div class="container">
+            <div class="header-menu" id="container">
+                <table class="header-menu">
+                    <tr class="header-menu">
+                        <td class="header-menu" id="about">About</td>
+                        <td class="header-menu" id="projects">Projects</td>
+                        <td class="header-menu" id="resume">Resume</td>
+                        <td class="header-menu" id="contact">Contact</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="header-title" id="container">
+                <h2 class="header-title" id="title">Christopher Han</h2>
+            </div>
+            <div class="header-icons" id="container">
+                <table class="header-icons">
+                    <tr class="header-icons">
+                        <td class="header-icons">
+                            <a href="https://www.linkedin.com/in/christopher-han-737a74235/">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="header-icons">
+                            <a href="https://github.com/sep160112138">
+                                <i class="fa fa-github" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td class="header-icons">
+                            <a href="mailto:christopher.bo.han2001@gmail.com">
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     `;
 
+    const headerContainer = document.querySelector('#header > .container');
+    const headerMenuContainer = document.querySelector('#container.header-menu');
     const headerMenu = document.querySelectorAll('table.header-menu');
     const headerContent = document.querySelectorAll('table td.header-menu');
+    const headerTitle = document.querySelector('#title.header-title');
+    const headerIconsContainer = document.querySelector('#container.header-icons');
+    const headerIconsTable = document.querySelector('table.header-icons');
+    const headerIconsData = document.querySelectorAll('td.header-icons > a');
+    const headerIcons = document.querySelectorAll('.fa');
 
-    for (let i = 0; i < headerMenu.length; i++) {
+    header.style = `
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+    `;
+
+    headerContainer.style = `
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    `;
+
+    headerMenuContainer.style = `
+        width: 250px;
+    `;
+
+    for (let i = 0; i < headerMenu.length; i++){
         headerMenu[i].style = `
             border-collapse: collapse;
             border-style: hidden;
+            width: 100%;
         `;
     }
+
     for (let i = 0; i < headerContent.length; i++) {
         headerContent[i].style = `
             border: 1px solid black;
         `;
     }
+
+    headerTitle.style = `
+        margin: 0px;
+    `;
+
+    headerIconsContainer.style = `
+        width: 250px;
+    `;
+
+    headerIconsTable.style = `
+        padding-left: 100px;
+        padding-right: 0px;
+        width: 100%;
+        
+    `;
+
+    for (let i = 0; i < headerIconsData.length; i++) {
+        headerIconsData[i].style = `
+            float: right;
+        `;
+    }
+
+    for (let i = 0; i < headerIcons.length; i++) {
+        headerIcons[i].style = `
+            color: rgb(0, 115, 255);
+        `;
+    }
+
 }
 
 function navigateMenu() {

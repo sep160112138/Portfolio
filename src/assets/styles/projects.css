@@ -18,3 +18,9 @@ project-card > article {
     width: 100%;
     flex-wrap: wrap;
 }
+
+#container.project-main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}

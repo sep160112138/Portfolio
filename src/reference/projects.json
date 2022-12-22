@@ -1,0 +1,50 @@
+[
+    {
+        "imgSrc": "./assets/images/voli_logo.png",
+        "imgAlt": "Portfolio",
+        "class": "project-portfolio",
+        "projectLnk": "",
+        "projectName": "Portfolio",
+        "projectDate": "December 2022 - Present"
+    },
+    {
+        "imgSrc": "./assets/images/voli_logo.png",
+        "imgAlt": "FA-AI",
+        "class": "project-faai",
+        "projectLnk":"",
+        "projectName": "FA-AI",
+        "projectDate": "July 2022 - Present"
+    },
+    {
+        "imgSrc": "./assets/images/voli_logo.png",
+        "imgAlt": "VOLI",
+        "class": "project-voli",
+        "projectLnk": "",
+        "projectName": "VOLI",
+        "projectDate": "May 2022 - Present"
+    },
+    {
+        "imgSrc": "./assets/images/voli_logo.png",
+        "imgAlt": "ProSeed",
+        "class": "project-proseed",
+        "projectLnk": "",
+        "projectName": "ProSeed",
+        "projectDate": "October 2022 - December 2022"
+    },
+    {
+        "imgSrc": "./assets/images/voli_logo.png",
+        "imgAlt": "SUZMUN Website",
+        "class": "project-suzmun",
+        "projectLnk": "",
+        "projectName": "VOLI",
+        "projectDate": "November 2017 - May 2019"
+    },
+    {
+        "imgSrc": "./assets/images/voli_logo.png",
+        "imgAlt": "Transmission Sphere Selector",
+        "class": "project-hl",
+        "projectLnk": "",
+        "projectName": "Transmission Sphere Selector",
+        "projectDate": "May 2016 - June 2017"
+    }
+]

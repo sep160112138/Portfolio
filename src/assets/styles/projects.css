@@ -1,0 +1,20 @@
+project-card {
+    align-items: center;
+    max-width: 33%;
+    text-align: center;
+}
+
+project-card > article {
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+#container.project-main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}

@@ -62,19 +62,20 @@ function loadMenu() {
 
     header.style = `
         background-color: white;
+        box-shadow: 0px 1px 50px black;
+        left: 0;
         position: fixed;
         top: 0px;
-        left: 0;
         width: 100%;
     `;
 
     headerContainer.style = `
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content:space-between;
-        text-align: center;
         padding-top: 5px;
         padding-bottom: 5px;
+        text-align: center;
     `;
 
     headerMenuContainer.style = `

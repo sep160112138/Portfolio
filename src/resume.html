@@ -7,30 +7,40 @@
         <meta name="description" content="Christopher Han Portfolio -- Resume">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="assets/styles/resume.css" />
+        <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+        <!--script type="text/javascript" src="assets/scripts/resume.js"></script-->
         <script type="text/javascript" src="assets/scripts/header_handler.js"></script>
     </head>
 
     <body>
-        <header id="header">
+        <header class="header" id="header">
         </header>
-
-        <div class="container">
-            <div id="resume-title-container">
-                <h1 id="resume-title-header">Resume</h1>
+        <main>
+            <div class="background" id="container">
+                <h1 class="background" id="resume-title">RESUME</h1>
             </div>
+            <div class="container">
+                <div class="resume-main" id="container">
+                    <iframe src="assets/files/resume.pdf">
+                        <object class="resume-main" data="assets/files/resume.pdf" type="application/pdf">
+                            <div>No online PDF viewer installed</div>
+                        </object>
+                    </iframe>
+                    <!--
+                        Initial idea:
+                        Have a png and a pdf version of the resume
+                        Display the png version with <img src="">
+                        Link to pdf version with <a href=""></a>
 
-            <div id="resume-main-container">
-                <iframe src="assets/files/resume.pdf"></iframe>
-                <!--
-                    Initial idea:
-                    Have a png and a pdf version of the resume
-                    Display the png version with <img src="">
-                    Link to pdf version with <a href=""></a>
-
-                    New idea: use iframe
-                -->
-                <img>
+                        New idea: use iframe
+                    -->
+                </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>

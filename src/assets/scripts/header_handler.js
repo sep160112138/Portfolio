@@ -9,7 +9,7 @@ function init() {
 
 function loadMenu() {
 
-    const header = document.getElementById('header');
+    const header = document.querySelector('#header.header');
     
     header.innerHTML = `
         <div class="container">
@@ -30,17 +30,17 @@ function loadMenu() {
                 <table class="header-icons">
                     <tr class="header-icons">
                         <td class="header-icons">
-                            <a href="https://www.linkedin.com/in/christopher-han-737a74235/">
+                            <a class="linkedin">
                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                             </a>
                         </td>
                         <td class="header-icons">
-                            <a href="https://github.com/sep160112138">
+                            <a class="github">
                                 <i class="fa fa-github" aria-hidden="true"></i>
                             </a>
                         </td>
                         <td class="header-icons">
-                            <a href="mailto:christopher.bo.han2001@gmail.com">
+                            <a class="mail" href="mailto:christopher.bo.han2001@gmail.com">
                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                             </a>
                         </td>
@@ -58,6 +58,8 @@ function loadMenu() {
     const headerIconsContainer = document.querySelector('#container.header-icons');
     const headerIconsTable = document.querySelector('table.header-icons');
     const headerIconsData = document.querySelectorAll('td.header-icons > a');
+    const headerLinkedin = document.querySelector('a.linkedin');
+    const headerGithub = document.querySelector('a.github');
     const headerIcons = document.querySelectorAll('.fa');
 
     header.style = `
@@ -117,6 +119,14 @@ function loadMenu() {
         `;
     }
 
+    headerLinkedin.addEventListener('click', () => {
+        window.open('https://www.linkedin.com/in/christopher-han-737a74235/', '_blank');
+    });
+    
+    headerGithub.addEventListener('click', () => {
+        window.open('https://github.com/sep160112138', '_blank');
+    });
+
     for (let i = 0; i < headerIcons.length; i++) {
         headerIcons[i].style = `
             color: rgb(0, 115, 255);
@@ -133,6 +143,7 @@ function navigateMenu() {
     const homeButton = document.querySelector('#title.header-title');
 
     aboutButton.addEventListener('click', function() {
+        console.log('click');
         location.href = 'about.html';
     })
     projectsButton.addEventListener('click', function() {

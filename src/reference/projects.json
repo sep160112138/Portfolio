@@ -1,6 +1,6 @@
 [
     {
-        "imgSrc": "./assets/images/voli_logo.png",
+        "imgSrc": "./assets/images/Portfolio.png",
         "imgAlt": "Portfolio",
         "class": "project-portfolio",
         "projectLnk": "",
@@ -8,7 +8,7 @@
         "projectDate": "December 2022 - Present"
     },
     {
-        "imgSrc": "./assets/images/voli_logo.png",
+        "imgSrc": "./assets/images/FA-AI.png",
         "imgAlt": "FA-AI",
         "class": "project-faai",
         "projectLnk":"",
@@ -16,7 +16,7 @@
         "projectDate": "July 2022 - Present"
     },
     {
-        "imgSrc": "./assets/images/voli_logo.png",
+        "imgSrc": "./assets/images/VOLI_logo.png",
         "imgAlt": "VOLI",
         "class": "project-voli",
         "projectLnk": "",
@@ -24,7 +24,7 @@
         "projectDate": "May 2022 - Present"
     },
     {
-        "imgSrc": "./assets/images/voli_logo.png",
+        "imgSrc": "./assets/images/ProSeed.png",
         "imgAlt": "ProSeed",
         "class": "project-proseed",
         "projectLnk": "",
@@ -32,15 +32,15 @@
         "projectDate": "October 2022 - December 2022"
     },
     {
-        "imgSrc": "./assets/images/voli_logo.png",
+        "imgSrc": "./assets/images/SUZMUN.png",
         "imgAlt": "SUZMUN Website",
         "class": "project-suzmun",
         "projectLnk": "",
-        "projectName": "VOLI",
+        "projectName": "SUZMUN",
         "projectDate": "November 2017 - May 2019"
     },
     {
-        "imgSrc": "./assets/images/voli_logo.png",
+        "imgSrc": "./assets/images/interferometer.png",
         "imgAlt": "Transmission Sphere Selector",
         "class": "project-hl",
         "projectLnk": "",

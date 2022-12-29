@@ -9,12 +9,18 @@ class ProjectCard extends HTMLElement {
         style.textContent = `
             img {
                 width: 100%;
+                border-radius: 20px;
             }
             article {
-                border: 1px solid black;
+                /*border: 1px solid black;*/
                 border-radius: 8px;
-                padding-left: 50px;
-                padding-right: 50px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px
+            }
+            h3 {
+                font-weight: 500;
+                font-size: 24px;
             }
         `;
 
@@ -28,7 +34,7 @@ class ProjectCard extends HTMLElement {
 
         article.innerHTML = `
             <img class="${data.class}" src="${data.imgSrc}" alt="${data.imgAlt}">
-            <p class="${data.class}">${data.projectName}</p>
+            <h3 class="${data.class}">${data.projectName}</p>
         `;
     }
 }

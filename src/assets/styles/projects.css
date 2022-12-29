@@ -4,23 +4,63 @@ project-card {
     text-align: center;
 }
 
-project-card > article {
-    border: 1px solid black;
-    border-radius: 8px;
-}
-
-.container {
-    max-width: 1200px;
-}
-
 #container.project-main {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
 
-#container.project-main {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+* {
+    font-family: 'Lato', sans-serif;
 }
+
+body {
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+    main {
+        left: 0;
+        top: 0;
+    }
+
+        #container.background {
+            align-items: center;
+            background: url(../images/home-background.jpg) no-repeat top center;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            background-size: cover;
+            display: flex;
+            height: 400px;
+            justify-content: center;
+            left: 0;
+            max-height: 400px;
+            top: 0;
+            width: 100%;
+        }
+
+            #project-title.background {
+                color: white;
+                font-size: 64px;
+                font-weight: 100;
+                margin: 0;
+            }
+
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+            #container.project-main {
+                margin-top: 150px;
+                margin-bottom: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1000px;
+            }

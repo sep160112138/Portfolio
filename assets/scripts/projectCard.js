@@ -10,9 +10,15 @@ class ProjectCard extends HTMLElement {
             img {
                 width: 100%;
                 border-radius: 20px;
+                transition: transform 0.5s;
+            }
+            article:hover > img {
+                transform: scale(1.05);
+            }
+            article:hover > h3 {
+                text-decoration: underline;
             }
             article {
-                /*border: 1px solid black;*/
                 border-radius: 8px;
                 padding-left: 20px;
                 padding-right: 20px;
@@ -21,6 +27,7 @@ class ProjectCard extends HTMLElement {
             h3 {
                 font-weight: 500;
                 font-size: 24px;
+                
             }
         `;
 

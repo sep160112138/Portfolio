@@ -78,6 +78,7 @@ function loadMenu() {
         position: fixed;
         top: 0px;
         width: 100%;
+        z-index: 100;
     `;
 
     headerContainer.style = `

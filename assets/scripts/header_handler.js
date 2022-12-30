@@ -16,10 +16,18 @@ function loadMenu() {
             <div class="header-menu" id="container">
                 <table class="header-menu">
                     <tr class="header-menu">
-                        <td class="header-menu" id="about">About</td>
-                        <td class="header-menu" id="projects">Projects</td>
-                        <td class="header-menu" id="resume">Resume</td>
-                        <td class="header-menu" id="contact">Contact</td>
+                        <td class="header-menu" id="about">
+                            <p>About</p>
+                        </td>
+                        <td class="header-menu" id="projects">
+                            <p>Projects</p>
+                        </td>
+                        <td class="header-menu" id="resume">
+                            <p>Resume</p>
+                        </td>
+                        <td class="header-menu" id="contact">
+                            <p>Contact</p>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -54,6 +62,7 @@ function loadMenu() {
     const headerMenuContainer = document.querySelector('#container.header-menu');
     const headerMenu = document.querySelectorAll('table.header-menu');
     const headerContent = document.querySelectorAll('table td.header-menu');
+    const headerMenuText = document.querySelectorAll('table td.header-menu > p');
     const headerTitle = document.querySelector('#title.header-title');
     const headerIconsContainer = document.querySelector('#container.header-icons');
     const headerIconsTable = document.querySelector('table.header-icons');
@@ -89,17 +98,28 @@ function loadMenu() {
             border-collapse: collapse;
             border-style: hidden;
             width: 100%;
+            
         `;
     }
 
     for (let i = 0; i < headerContent.length; i++) {
         headerContent[i].style = `
             border: 1px solid black;
+            
         `;
     }
 
+    for (let i = 0; i < headerMenuText.length; i++) {
+        headerMenuText[i].style = `
+            margin: 0;
+            cursor: pointer;
+        `;
+    }
+
+
     headerTitle.style = `
         margin: 0px;
+        cursor: pointer;
     `;
 
     headerIconsContainer.style = `
@@ -116,6 +136,7 @@ function loadMenu() {
     for (let i = 0; i < headerIconsData.length; i++) {
         headerIconsData[i].style = `
             float: right;
+            cursor: pointer;
         `;
     }
 

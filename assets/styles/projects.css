@@ -28,6 +28,14 @@ body {
         top: 0;
     }
 
+        td.header-menu > p:hover {
+            text-decoration: underline;
+        }
+
+        #title.header-title:hover {
+            text-decoration: underline;
+        }
+
         #container.background {
             align-items: center;
             background: url(../images/home-background.jpg) no-repeat top center;

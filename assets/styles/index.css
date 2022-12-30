@@ -17,6 +17,14 @@ body {
         text-align: center;
     }
 
+        td.header-menu > p:hover {
+            text-decoration: underline;
+        }
+
+        #title.header-title:hover {
+            text-decoration: underline;
+        }
+
         .container {
             max-width: 1200px;
             margin-left: auto;
@@ -58,6 +66,15 @@ body {
                     border: 1px solid white;
                     color: white;
                 }
+
+                    td.home-menu > p {
+                        margin: 0;
+                        cursor: pointer;
+                    }
+
+                    td.home-menu > p:hover {
+                        text-decoration: underline;
+                    }
 
 
 
